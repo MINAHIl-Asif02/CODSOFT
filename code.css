@@ -1,0 +1,543 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 150px;
+    width: 100%;
+    /* background-color:rgba(46, 139, 86, 0.186); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 150px;
+    
+}
+
+#nav h3{
+    color: green;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+#nav h1{
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+#nav h1::after{
+    content: " ";
+    position: absolute;
+    background-color: rgba(16, 68, 16, 0.817);
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    
+
+}
+ h1:hover{
+    color:rgb(25, 155, 84);
+  
+}
+ h1:hover::after{
+    width: 100%;
+    transition: width 0.3s linear; 
+}
+#nav button{
+    height: 50px;
+    width: 90px;
+    background-color: rgba(57, 184, 57, 0.758);
+    border-radius: 10px;
+    border: none;
+}
+#main{
+    position: relative;
+   
+ 
+}
+#page1{
+   /* position: absolute; */
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(107, 180, 107, 0.549);
+    display: flex;
+}
+#box1{
+    height: 80%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#box2{
+    /* display: flex; */
+    height: 80%;
+    width: 50%;
+    /* background-color:green; */
+    
+}
+
+#box1 h1{
+  font-weight: 900;
+  font-size: 50px;
+  margin-left: 20px;
+}
+#box1 p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+#box1 form{
+  margin-top: 15px;
+}
+#box1 input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    background:white;
+}
+#box1 button{
+    height: 35px;
+    width: 150px;
+    border: none;
+   border-radius: 20px;
+   background-color: rgba(79, 187, 79, 0.818);
+   
+}
+#box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ 
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   background-image: url("http://clipground.com/images/clipart-color-backgrounds-7.jpg");
+ 
+ 
+}
+
+#container{
+    height: 27vh;
+    width: 100%;
+    /* background-color: green; */
+    position: absolute;
+    top: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   gap: 20px;
+    
+
+}
+#container h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: gilroy;
+    text-transform: uppercase;
+    color: rgba(20, 114, 20, 0.83);
+
+}
+#container h2{
+   font-size: 30px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+#container p{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+#box3{
+    height: 35%;
+    width: 20%;
+    /* background-color: blue; */
+    margin-left: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   gap: 10px;
+ 
+   
+}
+#box3 img{
+  height: 80px;
+  width: 80px;
+ 
+  
+}
+#box3 h1{
+    font-size: 20px;
+    font-weight: 600;
+  
+    
+}
+#box3 h2{
+font-size: 20px;
+font-weight: 100;
+padding-left: 10px;
+text-align: center;
+}
+#box4{
+    height: 35%;
+    width: 20%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+     
+}
+#box4 img{
+    height: 100px;
+    width: 100px;
+    
+}
+#box4 h1{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+#box4 h2{
+font-size: 20px;
+font-weight: 100;
+padding-left: 10px;
+text-align: center;
+}
+#box5{
+    height: 35%;
+    width: 20%;
+    /* background-color: gray; */
+    margin-right: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#box5 img{
+    height: 80px;
+    width: 80px;
+}
+    
+#box5 h1{
+        font-size: 20px;
+        font-weight: 600;
+        
+}
+#box5 h2{
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 10px;
+    text-align: center;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: whites; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+   background-image: url("http://clipground.com/images/clipart-color-backgrounds-7.jpg");
+}
+#container2{
+    height: 40vh;
+    width: 100%;
+    /* background-color: green; */
+    position: absolute;
+    top: -20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#container2 h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgba(27, 99, 27, 0.83);
+}
+#container2 h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#container2 p{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+#box6{
+    height: 40vh;
+    width: 50vh;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+ align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#box6 img{
+    height: 60px;
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#box6 h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box6 p{
+    font-size: 17px;
+    font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+#box6 a{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(50, 178, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+  
+}
+#box7{
+    height: 40vh;
+    width: 50vh;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+       justify-content: flex-start;
+       flex-direction: column;
+       gap: 20px;
+    
+}
+#box7 img{
+    height: 60px;
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#box7 h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box7 p{
+    font-size: 17px;
+    font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+#box7 a{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(50, 178, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+  
+}
+
+#box8{
+    height: 40vh;
+    width: 50vh;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+       justify-content: flex-start;
+       flex-direction: column;
+       gap: 20px;
+}
+#box8 img{
+    height: 60px;
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#box8 h1{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box8 p{
+    font-size: 17px;
+    font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+#box8 a{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(50, 178, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+  
+}
+#page4{
+height: 100vh;
+width: 100%;
+/* background-color: red; */
+display: flex;
+align-items: self-end;
+justify-content: right;
+flex-direction: column;
+position: relative;
+background-image: url("http://clipground.com/images/clipart-color-backgrounds-7.jpg");
+
+}
+#container3{
+    height: 30vh;
+    width: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+#container3 h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgba(27, 99, 27, 0.83);
+   padding-top: 10px;
+    
+}
+#container3 h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+#container3 p{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    text-align: center;
+}
+#container4{
+    height: 50vh;
+    width: 100vh;
+    /* background-color: yellow; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+  
+}
+#page4 #box1{
+    height: 20vh;
+    width: 40%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+  
+}
+#box1 img{
+    height: 20px;
+    width: 20px;
+
+
+}
+#page4 #box9{
+    height: 20vh;
+    width: 40%;
+    /* background-color: rgb(105, 82, 128); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+   
+}
+#box9 img{
+    height: 20px;
+    width: 20px;
+ 
+
+}
+#page4 #box10{
+    height: 20vh;
+    width: 40%;
+    /* background-color: rgb(155, 142, 167); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    
+}
+#box10 img{
+    height: 20px;
+    width: 20px;
+
+
+}
+#page4 #box11{
+    height: 20vh;
+    width: 40%;
+    /* background-color: rgb(65, 51, 78); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+}
+#box11 img{
+    height: 20px;
+    width: 20px;
+
+
+}
+#page4 h5{
+    font-size: 20px;
+    font-weight: 300;
+   text-align: center;
+ 
+  
+}
